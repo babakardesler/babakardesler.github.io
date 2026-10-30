@@ -1,0 +1,1 @@
+var e=document.querySelector(`[data-redirect]`);if(e){let t=new URLSearchParams(location.search),n=JSON.parse(e.dataset.series??`{}`),r=(t.get(`q`)??``).slice(0,60),i=n[t.get(`seri`)??``];location.replace(r?`${e.dataset.search}?q=${encodeURIComponent(r)}`:`${e.dataset.redirect}${i?`#${i}`:``}`)}
